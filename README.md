@@ -24,8 +24,8 @@ Toda vez que quiser inicializar o site, rodar, dentro da pasta:
 
 Para poder usar o backend com flask
 
-  pip install Flask
-  pip install Flask-SQLAlchemy     
-  pip install flask-cors
+    pip install Flask
+    pip install Flask-SQLAlchemy     
+    pip install flask-cors
 
 
