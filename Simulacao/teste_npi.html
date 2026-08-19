@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+
+
+
+
+<html>
+
+<head>
+
+  <title>NPI - Teste</title>
+
+  <link href="teste_npi-style.css" rel="stylesheet"/>
+
+  <meta charset = "utf-8">
+  <script src="teste_npi_script.js"></script>
+
+</head>
+
+<body>
+
+<!--
+<div class = "outer">
+
+  <h2 class="fullscreen-overlay"> TESTE OUTER </h2>
+</div>
+-->
+
+<div class="main">
+  
+  <div class="container">
+    
+
+    <div class="heading">
+  
+
+
+      <h1>Alterar dados do Lab</h1>
+
+    </div>
+     
+     <!-- o "for" da label ta associado à id do elemento-->
+    <label for="nome" class="required">Nome do Lab</label>
+    <input type="text" id="name" class="general-input" name="name" placeholder="Lab1" required/>
+    <br>
+    
+
+
+
+    <label class ="required">O laboratório esteve ativo no ano de 2026?</label>
+
+    <!--div class="div-multiple"--> 
+      
+      <label for="ativo" class="dif-label"> <input type="radio" id="ativo" class="check" name="ativo">  <span class="check-span"> Sim </span> </label>
+      <br>
+      <label for="inativo" class="dif-label"> <input type="radio" id="inativo" class="check" name="inativo"> <span class="check-span"> Não </span> </label>
+       
+      <br>
+
+    <!--/div-->
+
+
+      <label for="descricao" id="desc-label" class = "required">Descrição do Lab (até 3000 caracteres - escrever "inativo" se inativo) </label>
+      <input type="text" id="descricao" class="general-input" name="descricao" placeholder= "Pesquisas sobre evasão escolar..." />
+
+      <label for="keywords" class="required">Palavras-chave, separadas por vírgula (até 100 caracteres - escrever "inativo" se inativo) </label>
+      <input type="text" id="keywords" class="general-input" name="keywords" placeholder= "palavra-chave 1, palavra chave 2,..." />
+
+
+
+      <label class="required" id="label-3">O laboratório é de informática? </label>
+
+
+      <label for="informatica" class="dif-label"> <input type="radio" id="informatica" class="check" name="informatica">  <span class="check-span"> Sim </span> </label>
+      <br>
+      <label for="inf_nao" class="dif-label"> <input type="radio" id="inf_nao" class="check" name="inf_nao"> <span class="check-span"> Não </span> </label>
+      <br>
+      <label for="inf_inativo" class="dif-label"> <input type="radio" id="inf_inativo" class="check" name="inativo"> <span class="check-span"> Inativo </span> </label>
+
+      <br>
+      <label class="required" id="area1"> Área do conhecimento 1 </label>
+
+      <label for="exatas" class="dif-label"> <input type="radio" id="exatas" class="check" name="exatas">  <span class="check-span"> Ciências Exatas e da Terra </span> </label>
+      <br>
+      <label for="biologicas" class="dif-label"> <input type="radio" id="biologicas" class="check" name="biologicas"> <span class="check-span"> Ciências Biológicas </span> </label>
+      <br>
+      <label for="engenharias" class="dif-label"> <input type="radio" id="engenharias" class="check" name="engenharias"> <span class="check-span"> Engenharias </span> </label>
+      <br>
+      <label for="saude" class="dif-label"> <input type="radio" id="saude" class="check" name="saude"> <span class="check-span"> Ciências da Saúde </span> </label>
+      <br>
+      <label for="agrarias" class="dif-label"> <input type="radio" id="agrarias" class="check" name="agrarias"> <span class="check-span"> Ciências Agrárias </span> </label>
+      <br>
+      <label for="sociais" class="dif-label"> <input type="radio" id="sociais" class="check" name="sociais"> <span class="check-span"> Ciências Sociais Aplicadas </span> </label>
+      <br>
+      <label for="humanas" class="dif-label"> <input type="radio" id="humanas" class="check" name="humanas"> <span class="check-span"> Ciências Humanas </span> </label>
+      <br>
+      <label for="ling-let-art" class="dif-label"> <input type="radio" id="ling-let-art" class="check" name="ling-let-art"> <span class="check-span"> Linguística, Letras e Artes </span> </label>
+      <br>
+      <label for="area1-inativo" class="dif-label"> <input type="radio" id="area1-inativo" class="check" name="area1-inativo"> <span class="check-span"> Inativo </span> </label>
+
+
+      <br>
+      <label id="area2"> Área do conhecimento 2 (opcional) </label>
+
+      <label for="exatas2" class="dif-label"> <input type="radio" id="exatas2" class="check" name="exatas2">  <span class="check-span"> Ciências Exatas e da Terra </span> </label>
+      <br>
+      <label for="biologicas2" class="dif-label"> <input type="radio" id="biologicas2" class="check" name="biologicas2"> <span class="check-span"> Ciências Biológicas </span> </label>
+      <br>
+      <label for="engenharias2" class="dif-label"> <input type="radio" id="engenharias2" class="check" name="engenharias2"> <span class="check-span"> Engenharias </span> </label>
+      <br>
+      <label for="saude2" class="dif-label"> <input type="radio" id="saude2" class="check" name="saude2"> <span class="check-span"> Ciências da Saúde </span> </label>
+      <br>
+      <label for="agrarias2" class="dif-label"> <input type="radio" id="agrarias2" class="check" name="agrarias2"> <span class="check-span"> Ciências Agrárias </span> </label>
+      <br>
+      <label for="sociais2" class="dif-label"> <input type="radio" id="sociais2" class="check" name="sociais2"> <span class="check-span"> Ciências Sociais Aplicadas </span> </label>
+      <br>
+      <label for="humanas2" class="dif-label"> <input type="radio" id="humanas2" class="check" name="humanas2"> <span class="check-span"> Ciências Humanas </span> </label>
+      <br>
+      <label for="ling-let-art2" class="dif-label"> <input type="radio" id="ling-let-art2" class="check" name="ling-let-art2"> <span class="check-span"> Linguística, Letras e Artes </span> </label>
+      <br>
+      <label for="area2-inativo" class="dif-label"> <input type="radio" id="area2-inativo" class="check" name="area2-inativo"> <span class="check-span"> Inativo </span> </label>
+
+      
+      <label class ="required">Além dos alunos de graduação, houve outros estudantes que utilizaram o laboratório durante o ano letivo de 2026?</label>
+      
+      <label for="outros-alunos-sim" class="dif-label"> <input type="radio" id="outros-alunos-sim" class="check" name="outros-alunos-sim"> <span class="check-span"> Sim </span> </label>
+      <br>
+      <label for="outros-alunos-nao" class="dif-label"> <input type="radio" id="outros-alunos-nao" class="check" name="outros-alunos-nao"> <span class="check-span"> Não </span> </label>
+      <br>
+      <label for="outros-alunos-inativo" class="dif-label"> <input type="radio" id="outros-alunos-inativo" class="check" name="outros-alunos-inativo"> <span class="check-span"> Inativo </span> </label>
+       
+      <br>
+
+
+      <!-- Durante o ano letivo de 2026, o laboratório foi utilizado para quais finalidades?-->
+
+      <label class ="required">Durante o ano letivo de 2026, o laboratório foi utilizado para quais finalidades?</label>
+      
+      <label for="ensino" class="dif-label"> <input type="checkbox" id="ensino" class="check" name="ensino"> <span class="check-span"> Ensino </span> </label>
+      <br>
+      <label for="pesquisa" class="dif-label"> <input type="checkbox" id="pesquisa" class="check" name="pesquisa"> <span class="check-span"> Pesquisa </span> </label>
+      <br>
+      <label for="extensao" class="dif-label"> <input type="checkbox" id="extensao" class="check" name="extensao"> <span class="check-span"> Extensão </span> </label>
+      <br>
+      <label for="finalidade-inativo" class="dif-label"> <input type="checkbox" id="finalidade-inativo" class="check" name="finalidade-inativo"> <span class="check-span"> Inativo </span> </label>
+       
+      <br>
+
+     <!-- 10. Durante o ano letivo de 2026, o laboratório executou plano, procedimento ou protocolo formal de Política de acesso e agendamento? -->
+
+     <label class ="required"> Durante o ano letivo de 2026, o laboratório executou plano, procedimento ou protocolo formal de Política de acesso e agendamento? </label>
+      
+      <label for="acesso-agendamento-sim" class="dif-label"> <input type="radio" id="acesso-agendamento-sim" class="check" name="acesso-agendamento-sim"> <span class="check-span"> Sim </span> </label>
+      <br>
+      <label for="acesso-agendamento-nao" class="dif-label"> <input type="radio" id="acesso-agendamento-nao" class="check" name="acesso-agendamento-nao"> <span class="check-span"> Não </span> </label>
+      <br>
+
+      <label for="acesso-agendamento-na" class="dif-label"> <input type="radio" id="acesso-agendamento-na" class="check" name="acesso-agendamento-na"> <span class="check-span"> Não se aplica </span> </label>
+      <br>
+
+      <label for="acesso-agendamento-inativo" class="dif-label"> <input type="radio" id="acesso-agendamento-inativo" class="check" name="acesso-agendamento-inativo"> <span class="check-span"> Inativo </span> </label>
+       
+      <br>
+
+
+      <label class ="required"> Durante o ano letivo de 2026, o laboratório executou plano, procedimento ou protocolo formal de Manutenção? </label>
+      
+      <label for="manutencao-sim" class="dif-label"> <input type="radio" id="manutencao-sim" class="check" name="manutencao-sim"> <span class="check-span"> Sim </span> </label>
+      <br>
+      <label for="manutencao-nao" class="dif-label"> <input type="radio" id="manutencao-nao" class="check" name="manutencao-nao"> <span class="check-span"> Não </span> </label>
+      <br>
+      
+      <label for="manutencao-na" class="dif-label"> <input type="radio" id="manutencao-na" class="check" name="manutencao-na"> <span class="check-span"> Não se aplica </span> </label>
+      <br>
+
+      <label for="manutencao-inativo" class="dif-label"> <input type="radio" id="manutencao-inativo" class="check" name="manutencao-inativo"> <span class="check-span"> Inativo </span> </label>
+       
+      <br>
+
+      <label class ="required"> Durante o ano letivo de 2026, o laboratório executou plano, procedimento ou protocolo formal de Gerenciamento de riscos? </label>
+      
+      <label for="riscos-sim" class="dif-label"> <input type="radio" id="riscos-sim" class="check" name="riscos-sim"> <span class="check-span"> Sim </span> </label>
+      <br>
+      <label for="riscos-nao" class="dif-label"> <input type="radio" id="riscos-nao" class="check" name="riscos-nao"> <span class="check-span"> Não </span> </label>
+      <br>
+
+      <label for="riscos-na" class="dif-label"> <input type="radio" id="riscos-na" class="check" name="riscos-na"> <span class="check-span"> Não se aplica </span> </label>
+      <br>
+
+      <label for="riscos-inativo" class="dif-label"> <input type="radio" id="riscos-inativo" class="check" name="riscos-inativo"> <span class="check-span"> Inativo </span> </label>
+       
+      <br>
+
+
+      <label class ="required"> Durante o ano letivo de 2026, o laboratório executou plano, procedimento ou protocolo formal de Gerenciamento de resíduos? </label>
+      
+      <label for="residuos-sim" class="dif-label"> <input type="radio" id="residuos-sim" class="check" name="residuos-sim"> <span class="check-span"> Sim </span> </label>
+      <br>
+      <label for="residuos-nao" class="dif-label"> <input type="radio" id="residuos-nao" class="check" name="residuos-nao"> <span class="check-span"> Não </span> </label>
+      <br>
+      <label for="residuos-na" class="dif-label"> <input type="radio" id="residuos-na" class="check" name="residuos-na"> <span class="check-span"> Não se aplica </span> </label>
+      <br>
+      <label for="residuos-inativo" class="dif-label"> <input type="radio" id="residuos-inativo" class="check" name="residuos-inativo"> <span class="check-span"> Inativo </span> </label>
+       
+      <br>
+
+
+      <label class ="required">O laboratório está localizado em algum local de oferta da UFRJ?</label>
+      
+      <label for="esta-local-oferta-sim" class="dif-label"> <input type="radio" id="esta-local-oferta-sim" class="check" name="esta-local-oferta-sim"> <span class="check-span"> Sim </span> </label>
+      <br>
+      <label for="esta-local-oferta-nao" class="dif-label"> <input type="radio" id="esta-local-oferta-nao" class="check" name="esta-local-oferta-nao"> <span class="check-span"> Não </span> </label>
+      <br>
+      <label for="esta-local-oferta-inativo" class="dif-label"> <input type="radio" id="esta-local-oferta-inativo" class="check" name="esta-local-oferta-inativo"> <span class="check-span"> Inativo </span> </label>
+       
+      <br>
+
+
+
+      <label class="required" id="local-oferta-lbl"> Selecione o local de oferta </label>
+
+      <label for="local-oferta-inativo" class="dif-label"> <input type="radio" id="local-oferta-inativo" class="check" name="local-oferta-inativo">  <span class="check-span"> Inativo </span> </label>
+      <br>
+
+      <label for="local-oferta-nao-esta" class="dif-label"> <input type="radio" id="local-oferta-nao-esta" class="check" name="local-oferta-nao-esta">  <span class="check-span"> Não está em local de oferta </span> </label>
+      <br>
+
+      <label for="loc-angra" class="dif-label"> <input type="radio" id="loc-angra" class="check" name="loc-angra"> <span class="check-span"> CONSÓRCIO CEDERJ - ANGRA DOS REIS - 26817 </span> </label>
+      <br>
+      <label for="loc-Belford-Roxo" class="dif-label"> <input type="radio" id="loc-Belford-Roxo" class="check" name="loc-Belford-Roxo"> <span class="check-span"> Polo UAB Belford Roxo - 1107219</span> </label>
+      <br>
+      <label for="loc-CEDERJ-Caxias" class="dif-label"> <input type="radio" id="loc-CEDERJ-Caxias" class="check" name="loc-CEDERJ-Caxias"> <span class="check-span"> Consórcio CEDERJ - Duque de Caxias - 10305</span> </label>
+      <br>
+      <!-- Campus UFRJ-Duque de Caxias Prof. Geraldo Cidade - 1155513 -->
+      <label for="loc-Caxias" class="dif-label"> <input type="radio" id="loc-Caxias" class="check" name="loc-Caxias"> <span class="check-span"> Campus UFRJ-Duque de Caxias Prof. Geraldo Cidade - 1155513</span> </label>
+      <br>
+
+      <label for="loc-CEDERJ-Itaperuna" class="dif-label"> <input type="radio" id="loc-CEDERJ-Itaperuna" class="check" name="loc-CEDERJ-Itaperuna"> <span class="check-span"> CONSÓRCIO CEDERJ - ITAPERUNA - 26900</span> </label>
+      <br>
+
+      <label for="loc-Macae" class="dif-label"> <input type="radio" id="loc-Macae" class="check" name="loc-Macae"> <span class="check-span"> Centro Multidisciplinar de Macaé - 146180</span> </label>
+      <br>
+      
+      <label for="loc-CEDERJ-Macae" class="dif-label"> <input type="radio" id="loc-CEDERJ-Macae" class="check" name="loc-CEDERJ-Macae"> <span class="check-span"> CONSÓRCIO CEDERJ - MACAÉ - UNED MACAÉ - CEFET - 26937</span> </label>
+      <br>
+
+      <label for="loc-NUPEM" class="dif-label"> <input type="radio" id="loc-NUPEM" class="check" name="loc-NUPEM"> <span class="check-span"> Instituto de Biodiversidade e Sustentabilidade - NUPEM - 1138492</span> </label>
+      <br>
+
+      <label for="CEDERJ-Miracema" class="dif-label"> <input type="radio" id="CEDERJ-Miracema" class="check" name="CEDERJ-Miracema"> <span class="check-span"> Polo UAB CEDERJ -Miracema - 1124760</span> </label>
+      <br>
+
+      <label for="loc-CEDERJ-NIG" class="dif-label"> <input type="radio" id="loc-CEDERJ-NIG" class="check" name="loc-CEDERJ-NIG"> <span class="check-span"> CONSÓRCIO CEDERJ - NOVA IGUAÇU - 10306</span> </label>
+      <br>
+
+      <label for="loc-CEDERJ-PARACAMBI" class="dif-label"> <input type="radio" id="loc-CEDERJ-PARACAMBI" class="check" name="loc-CEDERJ-PARACAMBI"> <span class="check-span"> CONSÓRCIO CEDERJ - PARACAMBI</span> </label>
+      <br>
+
+
+      <label for="loc-CEDERJ-Pirai" class="dif-label"> <input type="radio" id="loc-CEDERJ-Pirai" class="check" name="loc-CEDERJ-Pirai"> <span class="check-span"> CONSÓRCIO CEDERJ - PIRAÍ - PÓLO DO CEDERJ - 26984</span> </label>
+      <br>
+
+      <label for="loc-resende" class="dif-label"> <input type="radio" id="loc-resende" class="check" name="loc-resende"> <span class="check-span"> Polo UAB Resende - 1107220</span> </label>
+      <br>
+
+      <label for="loc-Praia-vermelha" class="dif-label"> <input type="radio" id="loc-Praia-vermelha" class="check" name="loc-Praia-vermelha"> <span class="check-span"> PRAIA VERMELHA - 971</span> </label>
+      <br>
+
+      <label for="loc-ESCOLADEMUSICA-992" class="dif-label"> <input type="radio" id="loc-ESCOLADEMUSICA-992" class="check" name="loc-ESCOLADEMUSICA-992"> <span class="check-span"> ESCOLA DE MÚSICA - 992</span> </label>
+      <br>
+
+      <label for="loc-FND" class="dif-label"> <input type="radio" id="loc-FND" class="check" name="loc-FND"> <span class="check-span"> FACULDADE DE DIREITO - 994</span> </label>
+      <br>
+
+      <label for="loc-sao-francisco" class="dif-label"> <input type="radio" id="loc-sao-francisco" class="check" name="loc-sao-francisco"> <span class="check-span"> LARGO SÃO FRANCISCO - 997</span> </label>
+      <br>
+
+      <label for="loc-CEDERJ-Campo-Grande" class="dif-label"> <input type="radio" id="loc-CEDERJ-Campo-Grande" class="check" name="loc-CEDERJ-Campo-Grande"> <span class="check-span"> CONSÓRCIO CEDERJ - CAMPO GRANDE</span> </label>
+      <br>
+
+      <label for="loc-CidUniv" class="dif-label"> <input type="radio" id="loc-CidUniv" class="check" name="loc-CidUniv"> <span class="check-span"> Cidade Universitária  - 657978</span> </label>
+      <br>
+
+      <label for="loc-valongo" class="dif-label"> <input type="radio" id="loc-valongo" class="check" name="loc-valongo"> <span class="check-span"> OBSERVATÓRIO DO VALONGO - 1005031</span> </label>
+      <br>
+
+<!--label for="loc-CidadeUniversitária-1078274" class="dif-label"> <input type="radio" id="loc-CidadeUniversitária-1078274" class="check" name="loc-CidadeUniversitária-1078274"> <span class="check-span"> Cidade Universitária - 1078274</span> </label>
+ <br-->
+
+    <label for="loc-IPUB" class="dif-label"> <input type="radio" id="loc-IPUB" class="check" name="loc-IPUB"> <span class="check-span"> Instituto de Psiquiatria da UFRJ - IPUB - 1096463</span> </label>
+    <br>
+
+    <label for="loc-Ventura" class="dif-label"> <input type="radio" id="loc-Ventura" class="check" name="loc-Ventura"> <span class="check-span"> Edifício Ventura - 1097433</span> </label>
+    <br>
+
+    <label for="loc-Sao-Goncalo" class="dif-label"> <input type="radio" id="loc-Sao-Goncalo" class="check" name="loc-Sao-Goncalo"> <span class="check-span"> Polo UAB - SAO GONCALO - 2007485</span> </label>
+    <br>
+
+    <label for="loc-CEDERJ-tres-rios" class="dif-label"> <input type="radio" id="loc-CEDERJ-tres-rios" class="check" name="loc-CEDERJ-tres-rios"> <span class="check-span"> CONSÓRCIO CEDERJ - TRÊS RIOS</span> </label>
+    <br>
+
+    <label for="loc-CEDERJ-volta-redonda" class="dif-label"> <input type="radio" id="loc-CEDERJ-volta-redonda" class="check" name="loc-CEDERJ-volta-redonda"> <span class="check-span"> CONSÓRCIO CEDERJ - VOLTA REDONDA </span> </label>
+    <br>
+
+    <label class ="required" id="lbl-municipio"> (Se o lab não está em local de oferta) Em qual município está localizado o laboratório? </label>
+
+    <br>
+
+
+
+    <!--onfocus='this.size=6;' onblur='this.size=6;' onfocusout='this.size=null;' onchange='this.size=6; this.blur();'-->
+    <select>
+      <option value="lab-em-loc-oferta">
+        Lab está em local de oferta
+      </option>
+
+      <option value="inativo">
+        Inativo
+      </option>
+
+      <option value="angra">
+        Angra dos reis
+      </option>
+
+      <option value ="3300159"> Aperibé </option>
+<option value ="3300209"> Araruama </option>
+<option value ="3300225"> Areal </option>
+<option value ="3300233"> Armação dos Búzios </option>
+<option value ="3300258"> Arraial do Cabo </option>
+<option value ="3300308"> Barra do Piraí </option>
+<option value ="3300407"> Barra Mansa </option>
+<option value ="3300456"> Belford Roxo </option>
+<option value ="3300506"> Bom Jardim </option>
+<option value ="3300605"> Bom Jesus do Itabapoana </option>
+<option value ="3300704"> Cabo Frio </option>
+<option value ="3300803"> Cachoeiras de Macacu </option>
+<option value ="3300902"> Cambuci </option>
+<option value ="3300936"> Carapebus </option>
+<option value ="3300951"> Comendador Levy Gasparian </option>
+<option value ="3301009"> Campos dos Goytacazes </option>
+<option value ="3301108"> Cantagalo </option>
+<option value ="3301157"> Cardoso Moreira </option>
+<option value ="3301207"> Carmo </option>
+<option value ="3301306"> Casimiro de Abreu </option>
+<option value ="3301405"> Conceição de Macabu </option>
+<option value ="3301504"> Cordeiro </option>
+<option value ="3301603"> Duas Barras </option>
+<option value ="3301702"> Duque de Caxias </option>
+<option value ="3301801"> Engenheiro Paulo de Frontin </option>
+<option value ="3301850"> Guapimirim </option>
+<option value ="3301876"> Iguaba Grande </option>
+<option value ="3301900"> Itaboraí </option>
+<option value ="3302007"> Itaguaí </option>
+<option value ="3302056"> Italva </option>
+<option value ="3302106"> Itaocara </option>
+<option value ="3302205"> Itaperuna </option>
+<option value ="3302254"> Itatiaia </option>
+<option value ="3302270"> Japeri </option>
+<option value ="3302304"> Laje do Muriaé </option>
+<option value ="3302403"> Macaé </option>
+<option value ="3302452"> Macuco </option>
+<option value ="3302502"> Magé </option>
+<option value ="3302601"> Mangaratiba </option>
+<option value ="3302700"> Maricá </option>
+<option value ="3302809"> Mendes </option>
+<option value ="3302858"> Mesquita </option>
+<option value ="3302908"> Miguel Pereira </option>
+<option value ="3303005"> Miracema </option>
+<option value ="3303104"> Natividade </option>
+<option value ="3303203"> Nilópolis </option>
+<option value ="3303302"> Niterói </option>
+<option value ="3303401"> Nova Friburgo </option>
+<option value ="3303500"> Nova Iguaçu </option>
+<option value ="3303609"> Paracambi </option>
+<option value ="3303708"> Paraíba do Sul </option>
+<option value ="3303807"> Paraty </option>
+<option value ="3303856"> Paty do Alferes </option>
+<option value ="3303906"> Petrópolis </option>
+<option value ="3303955"> Pinheiral </option>
+<option value ="3304003"> Piraí </option>
+<option value ="3304102"> Porciúncula </option>
+<option value ="3304110"> Porto Real </option>
+<option value ="3304128"> Quatis </option>
+<option value ="3304144"> Queimados </option>
+<option value ="3304151"> Quissamã </option>
+<option value ="3304201"> Resende </option>
+<option value ="3304300"> Rio Bonito </option>
+<option value ="3304409"> Rio Claro </option>
+<option value ="3304508"> Rio das Flores </option>
+<option value ="3304524"> Rio das Ostras </option>
+<option value ="3304557"> Rio de Janeiro </option>
+<option value ="3304607"> Santa Maria Madalena </option>
+<option value ="3304706"> Santo Antônio de Pádua </option>
+<option value ="3304755"> São Francisco de Itabapoana </option>
+<option value ="3304805"> São Fidélis </option>
+<option value ="3304904"> São Gonçalo </option>
+<option value ="3305000"> São João da Barra </option>
+<option value ="3305109"> São João de Meriti </option>
+<option value ="3305133"> São José de Ubá </option>
+<option value ="3305158"> São José do Vale do Rio Preto </option>
+<option value ="3305208"> São Pedro da Aldeia </option>
+<option value ="3305307"> São Sebastião do Alto </option>
+<option value ="3305406"> Sapucaia </option>
+<option value ="3305505"> Saquarema </option>
+<option value ="3305554"> Seropédica </option>
+<option value ="3305604"> Silva Jardim </option>
+<option value ="3305703"> Sumidouro </option>
+<option value ="3305752"> Tanguá </option>
+<option value ="3305802"> Teresópolis </option>
+<option value ="3305901"> Trajano de Moraes </option>
+<option value ="3306008"> Três Rios </option>
+<option value ="3306107"> Valença </option>
+<option value ="3306156"> Varre-Sai </option>
+<option value ="3306206"> Vassouras </option>
+<option value ="3306305"> Volta Redonda </option>
+
+    </select>
+
+
+
+
+
+      
+
+
+    <div class = cursos id=show-cursos>
+
+     <h2> Cursos que utilizam o lab </h2>
+      <ul id="lista-cursos"> </ul>
+
+    </div>
+  
+   
+
+
+<div class="btn">
+
+    <span id="submit" onclick="divCursos()"> adicionar curso</span>
+</div>
+
+<br>
+
+<div class="btn" id="div-submit-final">
+
+    <span id="submit-final" onclick="divSubmit()"> Concluído </span>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+</body>
+
+
+</html>
