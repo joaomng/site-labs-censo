@@ -6,8 +6,19 @@ import './App.css'
 
 import React, { useState } from 'react';
 
-//'http://localhost:5000/api'
 
+//lógica: O componente App tem três formulários: Centro, Unidade e Lab.
+// O do centro já é renderizado quando o site é carregado;
+// O forms da unidade só é renderizado quando o centro foi confirmado. Para isso há um estado
+// centroConfirmado, que é setado como true quando o botão do forms do centro é clicado;
+// e é setado como false na inicialização, ou quando um novo centro é selecionado no dropdown.
+// Assim, se um centro diferente é selecionado mesmo após a confirmação, a unidade so será exibida
+//  quando um novo centro for confirmado.
+//  A mesma lógica é aplicada para o laboratório de acordo com a unidade.
+// O código do que fazer após a confirmação do laboratório será mudado para direcionar
+// para a página de atualização de dados do lab.
+
+//'http://localhost:5000/api'
 const API_BASE_URL = '';
 
 export default function App() {
@@ -107,6 +118,8 @@ export default function App() {
       setErro(err.message);
     } finally {
       setLoading(false);
+
+      
     }
   };
 
@@ -114,7 +127,7 @@ export default function App() {
 
   return (
     <div style={{ maxWidth: '600px', margin: '40px auto', padding: '24px', fontFamily: 'Arial, sans-serif' }}>
-      <h2>Seleção e Gestão de Laboratório</h2>
+      <h2>Selecionar Laboratório</h2>
 
       {erro && (
         <div style={{ padding: '12px', background: '#ffebee', color: '#c62828', borderRadius: '4px', marginBottom: '16px' }}>
@@ -147,7 +160,7 @@ export default function App() {
       </form>
 
       {/* ---  UNIDADE --- */}
-      {centroConfirmado && (
+      {centroConfirmado && ( 
         <form onSubmit={handleConfirmarUnidade} style={{ marginBottom: '20px' }}>
           <label htmlFor="unidade"><strong>2. Unidade:</strong></label>
           <div style={{ display: 'flex', gap: '10px', marginTop: '8px' }}>
