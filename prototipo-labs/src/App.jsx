@@ -18,7 +18,7 @@ import React, { useState } from 'react';
 // O código do que fazer após a confirmação do laboratório será mudado para direcionar
 // para a página de atualização de dados do lab.
 
-//'http://localhost:5000/api'
+//'http://localhost:5000/api' //provavelmente só localhost:5000?
 const API_BASE_URL = '';
 
 export default function App() {
