@@ -16,6 +16,7 @@ Ir na pasta onde o projeto será criado e rodar
 dar um nome pro projeto
 selecionar o framework react
 selecionar a “variant” Javascript (puro!)
+selecionar "ESLint" quando perguntar qual linter utilizar
 
 Toda vez que quiser inicializar o site, rodar, dentro da pasta:
 
